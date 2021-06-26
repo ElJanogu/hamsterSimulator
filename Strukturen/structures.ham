@@ -1,0 +1,135 @@
+/*imperative program*//*
+
+- vor()      - void
+- linksUm()  - void
+- nimm()     - void
+- gib()      - void
+- vornFrei() - boolean
+- kornDa()   - boolean
+- maulLeer() - boolean
+
+- boolean
+- byte, short, int, long
+- float, double
+- char, String
+
+- if(){}else if(){}else{}
+- while(){}
+- for(){}
+
+*/
+
+void main()
+{
+	vor();
+	if(kornDa()) nimm();
+	
+	vor();
+	if(kornDa())	{ nimm(); }
+	else {
+		linksUm();
+		linksUm();
+		linksUm();
+	}
+	
+	vor();
+	if(kornDa())
+	{
+		nimm();
+	}
+	else
+	{
+		linksUm();
+		linksUm();
+		linksUm();
+		linksUm();
+	}
+
+	/*
+	
+	wenn ... sonst wenn ... sonst
+	
+	if (BEDINGUNG[EN])
+	{
+		ANWEISUNG[EN];
+	} 
+	else if (BEDINGUNG[EN])
+	{
+		ANWEISUNG[EN];
+	}
+	else 
+	{
+		ANWEISUNG[EN];
+	}
+	*/
+	
+	vor();
+	while(kornDa()) nimm();
+	
+	vor();
+	while(kornDa()) 
+	{
+		nimm();
+	}
+	
+	/*
+	
+	solange ...
+	
+	while (BEDINGUNG[EN])
+	{
+		ANWEISUNG[EN];
+	}
+	
+	do
+	{
+		ANWEISUNG[EN];
+	}
+	while (BEDINGUNG[EN]);
+	
+	*/
+	
+	vor();
+	for(int i = 0; i < 3; i++)
+	{
+		nimm();
+	}
+	
+	vor();
+	int a;
+	for(a = 0; a < 2;)
+	{
+		nimm();
+		a++;
+	}
+	
+	vor();
+	int b = 0;
+	for(; b <= 3; b++)
+	{
+		nimm();
+	}
+	
+	/*
+	for(INITIALISIERUNG; BEDINGUNG[EN]; UPDATE)
+	{
+		ANWEISUNG[EN];
+	}
+	*/
+	
+	//////////////////////////////////////////
+	
+	/*
+	int a ...
+	boolean b ...
+	
+	(a > 4 && !b) -> a groesser 4 und b ist false
+	(a == 0 || b) -> a ist gleich 0 oder b ist true
+	
+	((a > 3 && b)||(a <= -4 && !b)) ...
+	*/
+}
+
+
+
+
