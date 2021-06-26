@@ -1,0 +1,37 @@
+/*imperative program*//*
+
+- vor()      - void
+- linksUm()  - void
+- nimm()     - void
+- gib()      - void
+- vornFrei() - boolean
+- kornDa()   - boolean
+- maulLeer() - boolean
+
+*/
+
+void main()
+{
+	vor();
+	vor();
+	nimm();
+	vor();
+	vor();
+	vor();
+	linksUm();
+	vor();
+	vor();
+	nimm();
+	linksUm();
+	linksUm();
+	linksUm();
+	vor();
+	vor();
+	gib();
+	gib();
+	linksUm();
+	vor();
+	vor();
+}
+
+
