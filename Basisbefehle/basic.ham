@@ -12,26 +12,24 @@
 
 void main()
 {
-	vor();
-	vor();
-	nimm();
-	vor();
-	vor();
-	vor();
-	linksUm();
-	vor();
-	vor();
-	nimm();
-	linksUm();
-	linksUm();
-	linksUm();
-	vor();
-	vor();
-	gib();
-	gib();
-	linksUm();
-	vor();
-	vor();
+	vor(); // hamster geht einen schritt vor
+	vor(); // hamster geht einen schritt vor
+	nimm(); // Hamster nimmt ein Korn auf
+	vor(); // hamster geht einen schritt vor
+	vor(); // hamster geht einen schritt vor
+	vor(); // hamster geht einen schritt vor
+	linksUm(); // Hamster dreht sich nach links
+	vor(); // hamster geht einen schritt vor
+	vor(); // hamster geht einen schritt vor
+	nimm(); // Hamster nimmt ein Korn aufr
+	linksUm(); // Hamster dreht sich nach links
+	linksUm(); // Hamster dreht sich nach links
+	linksUm(); // Hamster dreht sich nach links
+	vor(); // hamster geht einen schritt vor
+	vor(); // hamster geht einen schritt vor
+	gib(); // Hamster legt ein Korn auf das Feld
+	gib(); // Hamster legt ein Korn auf das Feld
+	linksUm(); // Hamster dreht sich nach links
+	vor(); // hamster geht einen schritt vor
+	vor(); // hamster geht einen schritt vor
 }
-
-
