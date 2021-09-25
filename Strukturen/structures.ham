@@ -21,28 +21,28 @@
 
 void main()
 {
-	vor();
-	if(kornDa()) nimm();
+	vor(); // Hamster geht ein Feld vor
+	if(kornDa()) nimm(); // Wenn ein Korn auf dem Feld -> Nimm Korn auf
 	
-	vor();
-	if(kornDa())	{ nimm(); }
-	else {
-		linksUm();
-		linksUm();
-		linksUm();
+	vor(); // Hamster geht ein Feld vor
+	if(kornDa())	{ nimm(); } // Wenn ein Korn auf dem Feld -> Nimm Korn auf
+	else { // ... ansonsten
+		linksUm(); // Hamster dreht sich nach links
+		linksUm(); // Hamster dreht sich nach links
+		linksUm(); // Hamster dreht sich nach links
 	}
 	
-	vor();
-	if(kornDa())
+	vor(); // Hamster geht ein Feld vor
+	if(kornDa()) // Wenn sich ein Korn auf dem Feld befindet ....
 	{
-		nimm();
+		nimm(); // Hamster nimmt das Korn auf
 	}
-	else
+	else // ..ansinsten
 	{
-		linksUm();
-		linksUm();
-		linksUm();
-		linksUm();
+		linksUm(); // Hamster dreht sich nach links
+		linksUm(); // Hamster dreht sich nach links
+		linksUm(); // Hamster dreht sich nach links
+		linksUm(); // Hamster dreht sich nach links
 	}
 
 	/*
@@ -63,13 +63,13 @@ void main()
 	}
 	*/
 	
-	vor();
-	while(kornDa()) nimm();
+	vor(); // Hamster geht ein Feld vor
+	while(kornDa()) nimm(); // solange ein Korn auf dem Feld ist -> Hamster nimmt Korn auf
 	
-	vor();
-	while(kornDa()) 
+	vor(); // Hamster geht ein Feld vor
+	while(kornDa())  // solange ein Korn auf dem Feld ist....
 	{
-		nimm();
+		nimm(); // Hamster nimmt das Korn auf
 	}
 	
 	/*
@@ -89,25 +89,25 @@ void main()
 	
 	*/
 	
-	vor();
+	vor(); // Hamster geht ein Feld vor
 	for(int i = 0; i < 3; i++)
 	{
-		nimm();
+		nimm(); // Hamster nimmt das Korn auf
 	}
 	
-	vor();
-	int a;
+	vor(); // Hamster geht ein Feld vor
+	int a; // Deklariere Variable a von Typ int
 	for(a = 0; a < 2;)
 	{
-		nimm();
-		a++;
+		nimm(); // Hamster nimmt das Korn auf
+		a++; // Inkrementiere a um den Wert 1
 	}
 	
-	vor();
-	int b = 0;
+	vor(); // Hamster geht ein Feld vor
+	int b = 0; ///Deklarierung und Initialisierung der (int) Variable b
 	for(; b <= 3; b++)
 	{
-		nimm();
+		nimm(); // Hamster nimmt das Korn auf
 	}
 	
 	/*
