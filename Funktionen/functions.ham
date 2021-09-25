@@ -39,79 +39,79 @@ void main()
 	//turn();
 }
 
-void rechtsUm()
+void rechtsUm() // Deklariere Funktion von Typ void (kein Rückgabetyp), ohne Parameter
 {
-	linksUm();
-	linksUm();
-	linksUm();
+	linksUm(); // Hamster dreht sich nach links
+	linksUm(); // Hamster dreht sich nach links
+	linksUm(); // Hamster dreht sich nach links
 }
 
-void vorX(int number)
+void vorX(int number) // Deklariere Funktion von Typ void (kein Rückgabetyp), mit Parameter number von Typ int
 {
 	for(int i = 0; i < number; i++)
 	{
-		if(vornFrei())	vor();
+		if(vornFrei())	vor(); // Wenn vorne Frei -> Hamster geht ein Feld vor
 	}
 }
 
-void vorBisWand()
+void vorBisWand() // Deklariere Funktion von Typ void (kein Rückgabetyp), ohne Parameter
 {
-	while(vornFrei()) vor();
+	while(vornFrei()) vor(); // Solange vorne Frei -> Hamster geht ein Feld vo
 }
 
-void turn()
+void turn() // Deklariere Funktion von Typ void (kein Rückgabetyp), ohne Parameter
 {
-	linksUm();
-	linksUm();
+	linksUm(); // Hamster dreht sich nach links
+	linksUm(); // Hamster dreht sich nach links
 }
 
-int countStepsToWall()
+int countStepsToWall()  // Deklariere Funktion von Typ int, ohne Parameter
 {
-	int count = 0;
-	while(vornFrei())
+	int count = 0; // Deklariere und Initialisiere Variable count von typ int
+	while(vornFrei()) // Solange vorne frei ....
 	{
-		vor();
-		count++;
+		vor(); // Hamster geht ein Feld vor
+		count++; // inkrementiere Variable count um den Wert 1
 	}
 	
-	return count;
+	return count; // gebe den Wert von count als Funktionswert zurueck
 }
 
-int countStepsToCorn()
+int countStepsToCorn()// Deklariere Funktion von Typ int, ohne Parameter
 {
-	int count = 0;
-	while(!kornDa())
+	int count = 0; // Deklariere und Initialisiere Variable count von typ int
+	while(!kornDa()) // solange sich kein Korn auf dem Feld befindet ....
 	{
-		vor();
-		count++;
+		vor(); // Hamster geht ein Feld vor
+		count++; // inkrementiere Variable count um den Wert 1
 	}
 	
-	return count;
+	return count; // gebe den Wert von count als Funktionswert zurueck
 }
 
-boolean linksFrei()
+boolean linksFrei()// Deklariere Funktion von Typ boolean, ohne Parameter
 {
-	boolean b = false;
+	boolean b = false; // Deklariere und Initialisiere die Variable b von typ boolean
 	
-	linksUm();
-	b = vornFrei();
-	rechtsUm();
+	linksUm(); // Hamster dreht sich nach links
+	b = vornFrei(); // in b wird gespeichert ob das vordere Feld frei ist
+	rechtsUm(); // Hamster dreht sich nach rechts (Funktionsaufruf)
 	
-	return b;
+	return b; // gebe Wert der Variable b als Funktionswert zurueck
 }
 
-void sucheLuecke()
+void sucheLuecke() // Deklariere Funktion von Typ void (kein Rückgabetyp), ohne Parameter
 {
-	while(vornFrei()){
-		if(linksFrei())
+	while(vornFrei()){ // solange vorne frei ....
+		if(linksFrei()) // Wenn links frei .....
 		{
-			linksUm();
-			vor();
-			break;
+			linksUm(); // Hamster dreht sich nach links
+			vor(); // Hamster geht ein Feld nach vorne
+			break; // abbruch der while-schleife
 		}
-		else
+		else // .. ansonsten
 		{
-			vor();
+			vor(); // Hamster geht ein Feld nach vorne
 		}
 	}
 	
