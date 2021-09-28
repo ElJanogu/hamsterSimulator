@@ -1,34 +1,47 @@
 /*imperative program*//*
 
-- vor()      - void
-- linksUm()  - void
-- nimm()     - void
-- gib()      - void
-- vornFrei() - boolean
-- kornDa()   - boolean
-- maulLeer() - boolean
+- vor()      - void    -> Hamster geht einen schritt vor
+- linksUm()  - void    -> Hamster dreht sich nach links
+- nimm()     - void    -> Hamster nimmt ein Korn auf
+- gib()      - void    -> Hamster gibt ein Korn ab
+- vornFrei() - boolean -> das Feld vor Hamster ist frei (true) oder blockiert (false)
+- kornDa()   - boolean -> auf dem Feld des Hamsters befindet sich ein Korn
+- maulLeer() - boolean -> Das Maus des Hamsters ist Leer (Er traegt kein Korn)
 
-- boolean
-- byte, short, int, long
-- float, double7
-- char, String
+- boolean                -> Wahrheitswert
+- byte, short, int, long -> Ganzzahl
+- float, double          -> Kommazahl
+- char, String(*)        -> Zeichen(-Kette*)
 
 */
 
 void main()
-{
-	boolean b = false; // 0 / 1 ..... false / true ..... falsch / wahr
+{	
+	boolean b = false; // true / false
 	
 	byte by = 0;   // -128 ... 127
 	short sh = 12; // -32.768 ... 32.767
 	int i = 200; // -2.147.483.648 ... 2.147.483.647
-	long l = 3000; // ...
+	long l = 3000; // -2^36 ... 2^36 -1
 	
 	float fl = 2.5f; // ...
 	double dou = 3.76d; // ...
 	
 	char c = 'A';  // ..... A == 65 => ASCII
 	String str = "this is a text";
+	
+	/*
+	int a -> Deklarierung
+	a = 5; -> Initialisierung
+	...
+	a = 15 -> Wertezuweisung
+	a++;   -> Postfix Inkrement (=> a = a + 1)
+	a--;   -> Postfix Dekrement (=> a = a - 1)
+	++a;   -> Praefix Inkrement (=> a = a + 1)
+	--a;   -> Praefix Dekrement (=> a = a - 1)
+	
+	int b = 16; -> Deklarierung und Initialisierung
+	*/
 	
 }
 
