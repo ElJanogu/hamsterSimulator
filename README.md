@@ -9,8 +9,12 @@ Infos :
 - für Umgebung .ter datei laden oder per .png datei nachbauen
 
 Reihenfolge
+
 01 Basisbefehle
-02
-03
-04
-05
+
+02 Datentypen
+
+03 Strukturen
+
+04 Funktionen
+
