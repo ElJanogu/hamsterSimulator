@@ -1,35 +1,35 @@
 /*imperative program*//*
 
-- vor()      - void
-- linksUm()  - void
-- nimm()     - void
-- gib()      - void
-- vornFrei() - boolean
-- kornDa()   - boolean
-- maulLeer() - boolean
+- vor()      - void    -> Hamster geht einen schritt vor
+- linksUm()  - void    -> Hamster dreht sich nach links
+- nimm()     - void    -> Hamster nimmt ein Korn auf
+- gib()      - void    -> Hamster gibt ein Korn ab
+- vornFrei() - boolean -> das Feld vor Hamster ist frei (true) oder blockiert (false)
+- kornDa()   - boolean -> auf dem Feld des Hamsters befindet sich ein Korn
+- maulLeer() - boolean -> Das Maus des Hamsters ist Leer (Er traegt kein Korn)
 
 */
 
 void main()
 {
-	vor(); // hamster geht einen schritt vor
-	vor(); // hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
 	nimm(); // Hamster nimmt ein Korn auf
-	vor(); // hamster geht einen schritt vor
-	vor(); // hamster geht einen schritt vor
-	vor(); // hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
 	linksUm(); // Hamster dreht sich nach links
-	vor(); // hamster geht einen schritt vor
-	vor(); // hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
 	nimm(); // Hamster nimmt ein Korn aufr
 	linksUm(); // Hamster dreht sich nach links
 	linksUm(); // Hamster dreht sich nach links
 	linksUm(); // Hamster dreht sich nach links
-	vor(); // hamster geht einen schritt vor
-	vor(); // hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
 	gib(); // Hamster legt ein Korn auf das Feld
 	gib(); // Hamster legt ein Korn auf das Feld
 	linksUm(); // Hamster dreht sich nach links
-	vor(); // hamster geht einen schritt vor
-	vor(); // hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
+	vor(); // Hamster geht einen schritt vor
 }
