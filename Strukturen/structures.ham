@@ -1,43 +1,43 @@
 /*imperative program*//*
 
-- vor()      - void
-- linksUm()  - void
-- nimm()     - void
-- gib()      - void
-- vornFrei() - boolean
-- kornDa()   - boolean
-- maulLeer() - boolean
+- vor()      - void    -> Hamster geht einen schritt vor
+- linksUm()  - void    -> Hamster dreht sich nach links
+- nimm()     - void    -> Hamster nimmt ein Korn auf
+- gib()      - void    -> Hamster gibt ein Korn ab
+- vornFrei() - boolean -> das Feld vor Hamster ist frei (true) oder blockiert (false)
+- kornDa()   - boolean -> auf dem Feld des Hamsters befindet sich ein Korn
+- maulLeer() - boolean -> Das Maus des Hamsters ist Leer (Er traegt kein Korn)
 
-- boolean
-- byte, short, int, long
-- float, double
-- char, String
+- boolean                -> Wahrheitswert
+- byte, short, int, long -> Ganzzahl
+- float, double          -> Kommazahl
+- char, String(*)        -> Zeichen(-Kette*)
 
-- if(){}else if(){}else{}
-- while(){}
-- for(){}
+- if(){}else if(){}else{} -> (verzweigte) Anfrage
+- while(){}               -> While Schleife
+- for(){}                 -> zaehlende Schleife
 
 */
 
 void main()
 {
-	vor(); // Hamster geht ein Feld vor
-	if(kornDa()) nimm(); // Wenn ein Korn auf dem Feld -> Nimm Korn auf
+	vor(); // Hamster geht einen schritt vor
+	if(kornDa()) nimm(); // Wenn sich ein Korn auf dem Feld befindet -> Hamster nimmt ein Korn auf
 	
-	vor(); // Hamster geht ein Feld vor
-	if(kornDa())	{ nimm(); } // Wenn ein Korn auf dem Feld -> Nimm Korn auf
+	vor(); // Hamster geht einen schritt vor
+	if(kornDa())	{ nimm(); } // Wenn sich ein Korn auf dem Feld befindet -> Hamster nimmt ein Korn auf
 	else { // ... ansonsten
 		linksUm(); // Hamster dreht sich nach links
 		linksUm(); // Hamster dreht sich nach links
 		linksUm(); // Hamster dreht sich nach links
 	}
 	
-	vor(); // Hamster geht ein Feld vor
-	if(kornDa()) // Wenn sich ein Korn auf dem Feld befindet ....
+	vor(); // Hamster geht einen schritt vor
+	if(kornDa()) // Wenn sich ein Korn auf dem Feld befindet ->
 	{
-		nimm(); // Hamster nimmt das Korn auf
+		nimm(); // Hamster nimmt ein Korn auf
 	}
-	else // ..ansinsten
+	else // ... ansonsten
 	{
 		linksUm(); // Hamster dreht sich nach links
 		linksUm(); // Hamster dreht sich nach links
@@ -63,13 +63,13 @@ void main()
 	}
 	*/
 	
-	vor(); // Hamster geht ein Feld vor
-	while(kornDa()) nimm(); // solange ein Korn auf dem Feld ist -> Hamster nimmt Korn auf
+	vor(); // Hamster geht einen schritt vor
+	while(kornDa()) nimm(); // Solange sich ein Korn auf dem Feld befindet -> Hamster nimmt ein Korn auf
 	
-	vor(); // Hamster geht ein Feld vor
-	while(kornDa())  // solange ein Korn auf dem Feld ist....
+	vor(); // Hamster geht einen schritt vor
+	while(kornDa()) // Solange sich ein Korn auf dem Feld befindet 
 	{
-		nimm(); // Hamster nimmt das Korn auf
+		nimm(); // Hamster nimmt ein Korn auf
 	}
 	
 	/*
@@ -89,25 +89,25 @@ void main()
 	
 	*/
 	
-	vor(); // Hamster geht ein Feld vor
-	for(int i = 0; i < 3; i++)
+	vor(); // Hamster geht einen schritt vor
+	for(int i = 0; i < 3; i++) //
 	{
-		nimm(); // Hamster nimmt das Korn auf
+		nimm(); // Hamster nimmt ein Korn auf
 	}
 	
-	vor(); // Hamster geht ein Feld vor
-	int a; // Deklariere Variable a von Typ int
-	for(a = 0; a < 2;)
+	vor(); // Hamster geht einen schritt vor
+	int a; // Deklariere Variable von Typ int
+	for(a = 0; a < 2;) //
 	{
-		nimm(); // Hamster nimmt das Korn auf
-		a++; // Inkrementiere a um den Wert 1
+		nimm(); // Hamster nimmt ein Korn auf
+		a++; // inkrementiere Variable a
 	}
 	
-	vor(); // Hamster geht ein Feld vor
-	int b = 0; ///Deklarierung und Initialisierung der (int) Variable b
-	for(; b <= 3; b++)
+	vor(); // Hamster geht einen schritt vor
+	int b = 0; // Deklariere und Initialisiere Variable von Typ int
+	for(; b <= 3; b++) //
 	{
-		nimm(); // Hamster nimmt das Korn auf
+		nimm(); // Hamster nimmt ein Korn auf
 	}
 	
 	/*
